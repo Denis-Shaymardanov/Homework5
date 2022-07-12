@@ -4,9 +4,10 @@
 double[] InputArray(int number)
 {
     double[] result = new double[number];
+    Random random = new Random();
     for(int i=0;i<number;i++)
     {
-        result[i]=Math.Round(new Random().NextDouble(), 2);
+        result[i]=Math.Round(random.NextDouble(), 2);
     }
     return result;
 }

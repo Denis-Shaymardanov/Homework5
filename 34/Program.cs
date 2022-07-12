@@ -4,9 +4,10 @@
 int[] InputArray(int number)
 {
     int[] result = new int[number];
+    Random random = new Random();
     for(int i=0;i<number;i++)
     {
-        result[i]=new Random().Next(100,1000);
+        result[i]=random.Next(100,1000);
     }
     return result;
 }
